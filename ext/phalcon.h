@@ -243,6 +243,7 @@
 #include "phalcon/mvc/application.zep.h"
 #include "phalcon/mvc/application/exception.zep.h"
 #include "phalcon/mvc/collection.zep.h"
+#include "phalcon/mvc/collection/batchstorage.zep.h"
 #include "phalcon/mvc/collection/behavior/softdelete.zep.h"
 #include "phalcon/mvc/collection/behavior/timestampable.zep.h"
 #include "phalcon/mvc/collection/document.zep.h"

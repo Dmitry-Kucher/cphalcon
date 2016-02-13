@@ -27,6 +27,7 @@ use Phalcon\Di\InjectionAwareInterface;
 use Phalcon\Mvc\Collection\ManagerInterface;
 use Phalcon\Mvc\Collection\BehaviorInterface;
 use Phalcon\Mvc\Collection\Exception;
+use Phalcon\Mvc\Collection\BatchStorage;
 use Phalcon\Mvc\Model\MessageInterface;
 
 /**
@@ -833,6 +834,11 @@ abstract class Collection implements EntityInterface, CollectionInterface, Injec
 	public function appendMessage(<MessageInterface> message)
 	{
 		let this->_errorMessages[] = message;
+	}
+
+	public function getBatchStorage() -> <BatchStorage>
+	{
+	    return new BatchStorage(this);
 	}
 
 	/**

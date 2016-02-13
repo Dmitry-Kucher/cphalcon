@@ -269,6 +269,7 @@ zend_class_entry *phalcon_logger_item_ce;
 zend_class_entry *phalcon_logger_multiple_ce;
 zend_class_entry *phalcon_mvc_application_ce;
 zend_class_entry *phalcon_mvc_application_exception_ce;
+zend_class_entry *phalcon_mvc_collection_batchstorage_ce;
 zend_class_entry *phalcon_mvc_collection_behavior_softdelete_ce;
 zend_class_entry *phalcon_mvc_collection_behavior_timestampable_ce;
 zend_class_entry *phalcon_mvc_collection_ce;
@@ -668,6 +669,7 @@ static PHP_MINIT_FUNCTION(phalcon)
 	ZEPHIR_INIT(Phalcon_Mvc_Application);
 	ZEPHIR_INIT(Phalcon_Mvc_Application_Exception);
 	ZEPHIR_INIT(Phalcon_Mvc_Collection);
+	ZEPHIR_INIT(Phalcon_Mvc_Collection_BatchStorage);
 	ZEPHIR_INIT(Phalcon_Mvc_Collection_Behavior_SoftDelete);
 	ZEPHIR_INIT(Phalcon_Mvc_Collection_Behavior_Timestampable);
 	ZEPHIR_INIT(Phalcon_Mvc_Collection_Document);

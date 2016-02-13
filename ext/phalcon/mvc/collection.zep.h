@@ -33,6 +33,7 @@ PHP_METHOD(Phalcon_Mvc_Collection, _cancelOperation);
 PHP_METHOD(Phalcon_Mvc_Collection, _exists);
 PHP_METHOD(Phalcon_Mvc_Collection, getMessages);
 PHP_METHOD(Phalcon_Mvc_Collection, appendMessage);
+PHP_METHOD(Phalcon_Mvc_Collection, getBatchStorage);
 PHP_METHOD(Phalcon_Mvc_Collection, save);
 PHP_METHOD(Phalcon_Mvc_Collection, findById);
 PHP_METHOD(Phalcon_Mvc_Collection, findFirst);
@@ -208,6 +209,7 @@ ZEPHIR_INIT_FUNCS(phalcon_mvc_collection_method_entry) {
 	PHP_ME(Phalcon_Mvc_Collection, _exists, arginfo_phalcon_mvc_collection__exists, ZEND_ACC_PROTECTED)
 	PHP_ME(Phalcon_Mvc_Collection, getMessages, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(Phalcon_Mvc_Collection, appendMessage, arginfo_phalcon_mvc_collection_appendmessage, ZEND_ACC_PUBLIC)
+	PHP_ME(Phalcon_Mvc_Collection, getBatchStorage, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(Phalcon_Mvc_Collection, save, NULL, ZEND_ACC_PUBLIC)
 	PHP_ME(Phalcon_Mvc_Collection, findById, arginfo_phalcon_mvc_collection_findbyid, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)
 	PHP_ME(Phalcon_Mvc_Collection, findFirst, arginfo_phalcon_mvc_collection_findfirst, ZEND_ACC_PUBLIC|ZEND_ACC_STATIC)

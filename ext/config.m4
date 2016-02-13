@@ -248,6 +248,7 @@ if test "$PHP_PHALCON" = "yes"; then
 	phalcon/mvc/application.zep.c
 	phalcon/mvc/application/exception.zep.c
 	phalcon/mvc/collection.zep.c
+	phalcon/mvc/collection/batchstorage.zep.c
 	phalcon/mvc/collection/behavior/softdelete.zep.c
 	phalcon/mvc/collection/behavior/timestampable.zep.c
 	phalcon/mvc/collection/document.zep.c
